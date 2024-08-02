@@ -1,0 +1,7 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "haskell-funcional-bandaDescontrolada:lib"
+
+    - path: "./test"
+      component: "haskell-funcional-bandaDescontrolada:test:haskell-funcional-bandaDescontrolada-test"
