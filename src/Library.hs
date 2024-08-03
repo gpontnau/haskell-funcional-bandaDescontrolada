@@ -41,9 +41,6 @@ porcentajeDeRelevancia banda genero
 calcularPorcentaje :: Banda -> Genero -> Number
 calcularPorcentaje banda genero = (seguidores banda / sum (map cantidadSeguidores . estilo $ banda)) * 100
 
-cantidadTotalSeguidores :: [Genero] -> Number
-cantidadTotalSeguidores = sum . map cantidadSeguidores
-
 --C
 descontrolPorGenero :: Banda -> Genero -> Number
 descontrolPorGenero banda genero = descontrolTotalGenero genero * porcentajeDeRelevancia banda genero
